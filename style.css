@@ -1,0 +1,491 @@
+/* Estilo para el fondo */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  display: flex;
+  height: 100vh;
+  position: relative;
+  font-family: "Roboto Mono", monospace;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+/* Estilo para la barra de navegacion de las otras paginas */
+
+.navegacion a button {
+  background-color: black;
+  color: white;
+}
+
+/* Estilo para los botones */
+button {
+  box-shadow: 3px 3px 10px rgba(7, 242, 242, 0.634);
+  font-family: "Roboto Mono", monospace;
+  background-color: rgb(10, 10, 72);
+  color: white;
+  border: solid rgb(7, 158, 158) 2px;
+}
+button:hover {
+  background-color: white;
+  color: rgba(38, 34, 77, 0.975);
+  border: solid rgba(38, 34, 77, 0.975) 2px;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Estilo del footer */
+.redes a {
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  margin: 10px;
+}
+.instagram:hover {
+  color: rgb(230, 0, 127);
+}
+.linkedin:hover {
+  color: rgb(0, 110, 213);
+}
+.github:hover {
+  color: black;
+}
+/* Estilo para el inicio */
+.contenedorMarca {
+  text-shadow: 3px 3px 10px rgba(7, 242, 242, 0.634);
+}
+.navegadorInicio {
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+}
+.nav-item {
+  list-style: none;
+}
+
+.marca {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 100px;
+  margin: 100px;
+}
+
+/* Estilo para sobre mi */
+.sobreMi {
+  border: solid rgb(7, 158, 158) 2px;
+  background-color: rgb(10, 10, 72);
+}
+.tecnologias {
+  border: solid rgb(7, 158, 158) 2px;
+  background-color: rgb(10, 10, 72);
+}
+.tecnologias .techs {
+  background-color: rgba(255, 255, 255, 0.404);
+}
+
+/* Estilo para Proyectos */
+.cardProyectos {
+  border: solid rgb(7, 158, 158) 2px;
+  background-color: rgba(10, 10, 72, 0.807);
+  color: black;
+}
+.card-body {
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.404);
+}
+.card-title {
+  color: white;
+  font-size: 18px;
+}
+.link-a-proyecto {
+  padding: 5px;
+  background-color: rgb(38, 34, 77);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+.enviar {
+  font-family: "Roboto Mono", monospace;
+  background-color: rgba(38, 34, 77, 0.975);
+  color: white;
+}
+.enviar:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Estilo para servicios */
+.card-servicios{
+  color: black;
+}
+.card-body-servicios{
+  border: solid rgb(7, 158, 158) 2px;
+  padding: 10px;
+  margin: 0px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.404);
+}
+.card-link-servicios{
+  padding: 5px;
+  background-color: rgb(38, 34, 77);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}
+/* Media Queries */
+
+/* Moviles */
+@media (max-width: 768px) {
+  /* Ajuste para el inicio */
+  .bodyInicio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navegadorInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link button {
+    font-size: 12px;
+    margin: 20px;
+    width: 100px;
+    height: 40px;
+  }
+  .marca {
+    font-size: 50px;
+    margin: 0px;
+    padding: 40px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bodyPaginas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* Ajuste de la navegacion para todas las paginas menos inicio */
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .navegacionPaginas {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+  }
+  .navegacionPaginas li a button {
+    font-size: 12px;
+    margin: 2px;
+    padding: 5px;
+  }
+  /* Ajuste para sobre mi */
+  .bodySobreMi {
+    display: grid;
+    grid-template-rows: 10% 80% 20%;
+  }
+
+  .fotocv {
+    width: 150px;
+    border-radius: 80%;
+    margin: 10px;
+    padding: 0px;
+  }
+
+  .mainSobreMi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobreMi {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .informacionSobreMi {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .tecnologias {
+    font-size: 50px;
+    padding: 30px;
+    margin: 5px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tecnologias .techs {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-size: 60px;
+    border-radius: 20px;
+  }
+  .techs i {
+    margin: 10px;
+  }
+  /* Ajuste para proyectos */
+  .bodyProyectos{
+    display: grid;
+    grid-template-rows: 10% 80% 30%;
+  }
+  .cardsProyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-img {
+    width: 200px;
+  }
+  .cardProyectos{
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ajuste de servicios */
+  .bodyServicios{
+    display: grid;
+    grid-template-rows: 10% 80% 20%;
+  }
+  .main-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  /* Ajuste de contactos */
+  .bodyContacto{
+    display: grid;
+    grid-template-rows: 10% 80% 20%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+  textarea {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* ajuste pagina del inicio */
+  .bodyInicio {
+    display: grid;
+    grid-template-rows: 80% 20%;
+  }
+  .mainInicio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .contenedorMarca {
+    height: 280px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+  .marca {
+    font-size: 100px;
+  }
+  .navContenedor {
+    align-self: center;
+  }
+  .navegadorInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 10px;
+  }
+  .nav-link button {
+    width: 125px;
+    padding: 20px;
+    font-size: 15px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  .copyright {
+    display: flex;
+    align-content: center;
+    align-self: center;
+  }
+  /* ajuste de pagina sobre mi */
+  .bodySobreMi {
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .navegacionPaginas {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  .navegacionPaginas li a button {
+    margin: 20px;
+    padding: 10px;
+  }
+  .fotocv {
+    width: 200px;
+    border-radius: 80%;
+    margin: 10px;
+    padding: 10px;
+  }
+  .mainSobreMi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sobreMi {
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 20px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+  }
+  .tecnologias {
+    padding: 30px;
+    margin: 20px;
+    width: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .tecnologias .techs {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    font-size: 60px;
+    border-radius: 20px;
+  }
+  .techs i {
+    margin: 10px;
+  }
+  /* Ajuste para pagina proyectos */
+  .bodyProyectos {
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+  }
+  .cardsProyectos {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+  }
+  .card-img {
+    width: 200px;
+  }
+  .cardProyectos {
+    margin: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Ajuste de servicios */
+  .bodyServicios{
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+  }
+  .main-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
+  .card-body-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-link-servicios{
+    margin: 5px;
+  }
+  /* Ajuste de contactos */
+  .bodyContacto{
+    display: grid;
+    grid-template-rows: 15% 75% 10%;
+  }
+  .main-contacto{
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+  }
+  input {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+  textarea {
+    margin: 30px;
+    padding: 10px;
+    width: 300px;
+  }
+}
