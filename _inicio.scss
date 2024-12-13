@@ -1,0 +1,21 @@
+  /* Estilo para el inicio */
+  .contenedorMarca {
+    text-shadow: 3px 3px 10px $border-color;
+  }
+  .navegadorInicio {
+    list-style: none;
+    padding: 5px;
+    margin: 0px;
+  }
+  .nav-item {
+    list-style: none;
+  }
+  
+  .marca {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 100px;
+    margin: 100px;
+  }
+  

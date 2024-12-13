@@ -1,0 +1,18 @@
+// Estilo para servicios 
+.card-servicios{
+    color: $black-color;
+  }
+  .card-body-servicios{
+    border: solid $border-color 2px;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: $grey-color;
+  }
+  .card-link-servicios{
+    padding: 5px;
+    background-color: $button-color;
+    color: $white-color;
+    text-decoration: none;
+    border-radius: 10px;
+  }

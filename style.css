@@ -1,9 +1,8 @@
-/* Estilo para el fondo */
 body {
-  margin: 0;
-  padding: 0;
   background-color: black;
   color: white;
+  margin: 0;
+  padding: 0;
   display: flex;
   height: 100vh;
   position: relative;
@@ -19,56 +18,59 @@ canvas {
   z-index: -1;
 }
 
-/* Estilo para la barra de navegacion de las otras paginas */
-
 .navegacion a button {
   background-color: black;
   color: white;
 }
 
-/* Estilo para los botones */
 button {
-  box-shadow: 3px 3px 10px rgba(7, 242, 242, 0.634);
+  box-shadow: 3px 3px 10px rgb(7, 158, 158);
   font-family: "Roboto Mono", monospace;
   background-color: rgb(10, 10, 72);
   color: white;
   border: solid rgb(7, 158, 158) 2px;
 }
+
 button:hover {
   background-color: white;
-  color: rgba(38, 34, 77, 0.975);
-  border: solid rgba(38, 34, 77, 0.975) 2px;
+  color: rgb(10, 10, 72);
+  border: solid rgb(10, 10, 72) 2px;
 }
 
 ul {
   list-style: none;
 }
 
-/* Estilo del footer */
 .redes a {
   color: white;
   text-decoration: none;
   font-size: 40px;
   margin: 10px;
 }
+
 .instagram:hover {
   color: rgb(230, 0, 127);
 }
+
 .linkedin:hover {
   color: rgb(0, 110, 213);
 }
+
 .github:hover {
   color: black;
 }
+
 /* Estilo para el inicio */
 .contenedorMarca {
-  text-shadow: 3px 3px 10px rgba(7, 242, 242, 0.634);
+  text-shadow: 3px 3px 10px rgb(7, 158, 158);
 }
+
 .navegadorInicio {
   list-style: none;
   padding: 5px;
   margin: 0px;
 }
+
 .nav-item {
   list-style: none;
 }
@@ -81,71 +83,76 @@ ul {
   margin: 100px;
 }
 
-/* Estilo para sobre mi */
 .sobreMi {
   border: solid rgb(7, 158, 158) 2px;
   background-color: rgb(10, 10, 72);
 }
+
 .tecnologias {
   border: solid rgb(7, 158, 158) 2px;
   background-color: rgb(10, 10, 72);
 }
+
 .tecnologias .techs {
   background-color: rgba(255, 255, 255, 0.404);
 }
 
-/* Estilo para Proyectos */
 .cardProyectos {
   border: solid rgb(7, 158, 158) 2px;
-  background-color: rgba(10, 10, 72, 0.807);
+  background-color: rgb(10, 10, 72);
   color: black;
 }
+
 .card-body {
   padding: 10px;
   margin: 0px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.404);
 }
+
 .card-title {
   color: white;
   font-size: 18px;
 }
+
 .link-a-proyecto {
   padding: 5px;
-  background-color: rgb(38, 34, 77);
+  background-color: rgb(10, 10, 72);
   color: white;
   text-decoration: none;
   border-radius: 10px;
 }
+
 .enviar {
   font-family: "Roboto Mono", monospace;
-  background-color: rgba(38, 34, 77, 0.975);
+  background-color: rgb(10, 10, 72);
   color: white;
 }
+
 .enviar:hover {
   background-color: black;
   color: white;
 }
 
-/* Estilo para servicios */
-.card-servicios{
+.card-servicios {
   color: black;
 }
-.card-body-servicios{
+
+.card-body-servicios {
   border: solid rgb(7, 158, 158) 2px;
   padding: 10px;
   margin: 0px;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.404);
 }
-.card-link-servicios{
+
+.card-link-servicios {
   padding: 5px;
-  background-color: rgb(38, 34, 77);
+  background-color: rgb(10, 10, 72);
   color: white;
   text-decoration: none;
   border-radius: 10px;
 }
-/* Media Queries */
 
 /* Moviles */
 @media (max-width: 768px) {
@@ -206,14 +213,12 @@ ul {
     display: grid;
     grid-template-rows: 10% 80% 20%;
   }
-
   .fotocv {
     width: 150px;
     border-radius: 80%;
     margin: 10px;
     padding: 0px;
   }
-
   .mainSobreMi {
     display: flex;
     justify-content: center;
@@ -257,11 +262,11 @@ ul {
     margin: 10px;
   }
   /* Ajuste para proyectos */
-  .bodyProyectos{
+  .bodyProyectos {
     display: grid;
     grid-template-rows: 10% 80% 30%;
   }
-  .cardsProyectos{
+  .cardsProyectos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,7 +274,7 @@ ul {
   .card-img {
     width: 200px;
   }
-  .cardProyectos{
+  .cardProyectos {
     margin: 10px;
     padding: 20px;
     border-radius: 30px;
@@ -277,20 +282,19 @@ ul {
     flex-direction: column;
     align-items: center;
   }
-
   /* Ajuste de servicios */
-  .bodyServicios{
+  .bodyServicios {
     display: grid;
     grid-template-rows: 10% 80% 20%;
   }
-  .main-servicios{
+  .main-servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
   /* Ajuste de contactos */
-  .bodyContacto{
+  .bodyContacto {
     display: grid;
     grid-template-rows: 10% 80% 20%;
   }
@@ -310,7 +314,6 @@ ul {
     width: 300px;
   }
 }
-
 @media (min-width: 768px) {
   /* ajuste pagina del inicio */
   .bodyInicio {
@@ -441,31 +444,31 @@ ul {
     align-items: center;
   }
   /* Ajuste de servicios */
-  .bodyServicios{
+  .bodyServicios {
     display: grid;
     grid-template-rows: 15% 75% 10%;
   }
-  .main-servicios{
+  .main-servicios {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
   }
-  .card-body-servicios{
+  .card-body-servicios {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .card-link-servicios{
+  .card-link-servicios {
     margin: 5px;
   }
   /* Ajuste de contactos */
-  .bodyContacto{
+  .bodyContacto {
     display: grid;
     grid-template-rows: 15% 75% 10%;
   }
-  .main-contacto{
+  .main-contacto {
     display: flex;
     align-content: center;
     align-items: center;
@@ -489,3 +492,5 @@ ul {
     width: 300px;
   }
 }
+
+/*# sourceMappingURL=style-sass.css.map */

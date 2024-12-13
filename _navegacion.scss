@@ -1,0 +1,24 @@
+  // Estilo para la barra de navegacion de las otras paginas 
+  
+  .navegacion a button {
+    background-color: $black-color;
+    color: $white-color;
+  }
+  
+  // Estilo para los botones 
+  button {
+    box-shadow: 3px 3px 10px $border-color;
+    font-family: "Roboto Mono", monospace;
+    background-color: $button-color;
+    color: $white-color;
+    border: solid rgb(7, 158, 158) 2px;
+  }
+  button:hover {
+    background-color: $white-color;
+    color: $button-color;
+    border: solid $button-color 2px;
+  }
+  
+  ul {
+    list-style: none;
+  }

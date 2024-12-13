@@ -1,0 +1,16 @@
+  // Estilo del footer 
+  .redes a {
+    color: $white-color;
+    text-decoration: none;
+    font-size: 40px;
+    margin: 10px;
+  }
+  .instagram:hover {
+    color: $instagram-color;
+  }
+  .linkedin:hover {
+    color: $linkediln-color;
+  }
+  .github:hover {
+    color: $black-color;
+  }

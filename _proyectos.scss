@@ -1,0 +1,32 @@
+// Estilo para Proyectos 
+.cardProyectos {
+    border: solid $border-color 2px;
+    background-color: $button-color;
+    color: $black-color;
+  }
+  .card-body {
+    padding: 10px;
+    margin: 0px;
+    border-radius: 10px;
+    background-color: $grey-color;
+  }
+  .card-title {
+    color: $white-color;
+    font-size: 18px;
+  }
+  .link-a-proyecto {
+    padding: 5px;
+    background-color: $button-color;
+    color: $white-color;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  .enviar {
+    font-family: "Roboto Mono", monospace;
+    background-color: $button-color;
+    color: $white-color;
+  }
+  .enviar:hover {
+    background-color: $black-color;
+    color: $white-color;
+  }
