@@ -1,10 +1,10 @@
 // Aca se importaran los archivos scss
-@import "variables";
-@import "body";
-@import "navegacion";
-@import "footer";
-@import "inicio";
-@import "sobremi";
-@import "proyectos";
-@import "servicios";
-@import "mediaQueries";
+@import "./paginas_sass/variables";
+@import "./paginas_sass/body";
+@import "./paginas_sass/navegacion";
+@import "./paginas_sass/footer";
+@import "./paginas_sass/inicio";
+@import "./paginas_sass/sobremi";
+@import "./paginas_sass/proyectos";
+@import "./paginas_sass/servicios";
+@import "./paginas_sass/mediaQueries";
